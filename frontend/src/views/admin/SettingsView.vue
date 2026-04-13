@@ -2664,7 +2664,7 @@ const form = reactive<SettingsForm>({
   default_concurrency: 1,
   default_subscriptions: [],
   site_name: 'RelayMint',
-  site_logo: '/logo.svg',
+  site_logo: '/logo.png',
   site_subtitle: 'A clean OpenAI relay gateway',
   api_base_url: '',
   contact_info: '',

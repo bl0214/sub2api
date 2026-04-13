@@ -25,7 +25,7 @@ export const useAppStore = defineStore('app', () => {
   const publicSettingsLoaded = ref<boolean>(false)
   const publicSettingsLoading = ref<boolean>(false)
   const siteName = ref<string>('RelayMint')
-  const siteLogo = ref<string>('/logo.svg')
+  const siteLogo = ref<string>('/logo.png')
   const siteVersion = ref<string>('')
   const contactInfo = ref<string>('')
   const apiBaseUrl = ref<string>('')
@@ -289,7 +289,7 @@ export const useAppStore = defineStore('app', () => {
     }
     cachedPublicSettings.value = config
     siteName.value = config.site_name || 'RelayMint'
-    siteLogo.value = config.site_logo || '/logo.svg'
+    siteLogo.value = config.site_logo || '/logo.png'
     siteVersion.value = config.version || ''
     contactInfo.value = config.contact_info || ''
     apiBaseUrl.value = config.api_base_url || ''

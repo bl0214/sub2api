@@ -220,7 +220,7 @@ func (s *SettingService) GetPublicSettings(ctx context.Context) (*PublicSettings
 		TurnstileEnabled:                 settings[SettingKeyTurnstileEnabled] == "true",
 		TurnstileSiteKey:                 settings[SettingKeyTurnstileSiteKey],
 		SiteName:                         s.getStringOrDefault(settings, SettingKeySiteName, "RelayMint"),
-		SiteLogo:                         s.getStringOrDefault(settings, SettingKeySiteLogo, "/logo.svg"),
+		SiteLogo:                         s.getStringOrDefault(settings, SettingKeySiteLogo, "/logo.png"),
 		SiteSubtitle:                     s.getStringOrDefault(settings, SettingKeySiteSubtitle, "A clean OpenAI relay gateway"),
 		APIBaseURL:                       settings[SettingKeyAPIBaseURL],
 		ContactInfo:                      settings[SettingKeyContactInfo],
@@ -899,7 +899,7 @@ func (s *SettingService) InitializeDefaultSettings(ctx context.Context) error {
 		SettingKeyRegistrationEmailSuffixWhitelist: "[]",
 		SettingKeyPromoCodeEnabled:                 "true", // 默认启用优惠码功能
 		SettingKeySiteName:                         "RelayMint",
-		SettingKeySiteLogo:                         "/logo.svg",
+		SettingKeySiteLogo:                         "/logo.png",
 		SettingKeyPurchaseSubscriptionEnabled:      "false",
 		SettingKeyPurchaseSubscriptionURL:          "",
 		SettingKeyTableDefaultPageSize:             "20",
